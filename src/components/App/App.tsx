@@ -21,7 +21,7 @@ function App() {
   return (
     <div className={css.app}>
       <CareInfo />
-      <VoteOptions onVote={handleVote} onReset={resetVotes} canReset={totalVotes > 0 ? true : falseq} />
+      <VoteOptions onVote={handleVote} onReset={resetVotes} canReset={totalVotes > 0 ? true : false} />
       {totalVotes > 0 ? (
       <VoteStats votes={votes} totalVotes={totalVotes} positiveRate={positiveRate} />
     ) : (
